@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.a {
+  fill: #000000;
+  fill-opacity: 1;
+  fill-rule: nonzero;
+  stroke: none;
+}
+
+.b {
+  fill: #00aaae;
+  fill-opacity: 1;
+  fill-rule: nonzero;
+  stroke: none;
+}
+
+.c {
+  fill: #000000;
+  fill-opacity: 1;
+  fill-rule: nonzero;
+  stroke: none;
+}
+
+.d {
+  fill: #00aaae;
+  fill-opacity: 1;
+  fill-rule: nonzero;
+  stroke: none;
+}
+
+.e {
+  fill: #ffffff;
+  fill-opacity: 1;
+  fill-rule: nonzero;
+  stroke: none;
+}
