@@ -108,11 +108,13 @@ export function Hero() {
               Connecting Equipment, Connecting People.
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-              By leveraging insights from our network of industry insiders,
-              you’ll know exactly when to buy to maximize profit, and exactly
-              when to sell to avoid painful losses.
+              At Hire42, we believe in the power of easy access to equipment.
+    Whether you're in need of tools, trailers, or other equipment, or you're
+    looking to monetize your underutilized equipment, our platform makes it
+    simple to connect and transact.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
+              {/*
               <AppStoreLink />
               <Button
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -121,6 +123,7 @@ export function Hero() {
                 <PlayIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2.5">Watch the video</span>
               </Button>
+              */}
             </div>
           </div>
           <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
@@ -132,6 +135,7 @@ export function Hero() {
             </div>
           </div>
           <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
+            {/*
             <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">
               As featured in
             </p>
@@ -154,6 +158,7 @@ export function Hero() {
                 </li>
               ))}
             </ul>
+            */}
           </div>
         </div>
       </Container>
