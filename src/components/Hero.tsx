@@ -109,9 +109,9 @@ export function Hero() {
             </h1>
             <p className="mt-6 text-lg text-gray-600">
               At Hire42, we believe in the power of easy access to equipment.
-    Whether you're in need of tools, trailers, or other equipment, or you're
-    looking to monetize your underutilized equipment, our platform makes it
-    simple to connect and transact.
+              Whether you&apos;re in need of tools, trailers, or other
+              equipment, or you&apos;re looking to monetize your underutilized
+              equipment, our platform makes it simple to connect and transact.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               {/*
