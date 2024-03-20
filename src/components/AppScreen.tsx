@@ -99,10 +99,7 @@ AppScreen.Body = forwardRef<
   { className?: string; children: React.ReactNode }
 >(function AppScreenBody({ children, className }, ref) {
   return (
-    <div
-      ref={ref}
-      className={clsx('mt-6 flex-auto rounded-t-2xl bg-white', className)}
-    >
+    <div ref={ref} className={clsx('mt-6 flex-auto bg-white', className)}>
       {children}
     </div>
   )
