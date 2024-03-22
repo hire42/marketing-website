@@ -65,6 +65,7 @@ export function Header() {
               */}
             </div>
           </div>
+          {/*
           <div className="flex items-center gap-6">
             <Popover className="lg:hidden">
               {({ open }) => (
@@ -108,23 +109,19 @@ export function Header() {
                             <MobileNavLink href="/#features">
                               Features
                             </MobileNavLink>
-                            {/*
                             <MobileNavLink href="/#reviews">
                               Reviews
                             </MobileNavLink>
                             <MobileNavLink href="/#pricing">
                               Pricing
                             </MobileNavLink>
-                            */}
                             <MobileNavLink href="/#faqs">FAQs</MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
-                            {/*
                             <Button href="/login" variant="outline">
                               Log in
                             </Button>
                             <Button href="#">Download the app</Button>
-                            */}
                           </div>
                         </Popover.Panel>
                       </>
@@ -133,15 +130,14 @@ export function Header() {
                 </>
               )}
             </Popover>
-            {/*
             <Button href="/login" variant="outline" className="hidden lg:block">
               Log in
             </Button>
             <Button href="#" className="hidden lg:block">
               Download
             </Button>
-            */}
           </div>
+          */}
         </Container>
       </nav>
     </header>
