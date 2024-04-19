@@ -1,53 +1,33 @@
-# Tenus est Actaeas inque habuit satis indulgere
+By using the Hire42 platform, you agree to the following terms and conditions:
 
-## Aure putetis tectos ad illa auras huic
+1. **Liability Disclaimer**:
+   Hire42 is not responsible for any loss of life or income arising from hiring
+equipment through the platform. We are also not liable for any loss arising from
+fraudulent use of the platform. However, Hire42 may, at its discretion,
+reimburse part or all of the cost of an item in cases of fraudulent use.
 
-Lorem markdownum visumque tibi tegunt precamur quatiens secura, Bacchi.
-Cognoscere ipse! Et movi labefactaque animo rogati, Corycidas spirarunt partim
-iuppiter rescindere.
+2. **Equipment Condition and Certificates**:
+   The lender (lessor) is responsible for ensuring that the equipment listed on
+the platform is in working order and complies with all relevant regulations.
+This includes having the up-to-date required certificates for the equipment and
+any required certificates for transportation, if applicable.
 
-1. Et patris inde illum
-2. Tanta quoque pallescere in ille
-3. Luxit ventos altera pocula victarum natus Lernaeae
-4. Furibunda inpiger ad Iliacos carcere a Schoeneia
-5. Enixa quisque et fratri iter poteras quamvis
-6. Facta per figit recessu modo quid milite
+3. **Certificate Responsibility**:
+   The borrower (lessee) is responsible for attaining any certificates required
+for equipment operation and/or transport of equipment, if applicable.
 
-## Lumina infit proles Cocinthia utrumque a accepit
+4. **Tax Responsibility**:
+   The lender (lessor) is responsible for complying with all tax obligations to
+the Inland Revenue Department (IRD), including any taxes related to the rental
+income generated through the platform.
 
-Te flamma caecaque, domas vetitorum sedit Tlepolemus *lecti*. Eque Ide utrumque
-quam, male mox alumni sunt [quid volucri arbusta](http://optas.org/aras) Atque
-omnia enim poplite, sumpta non.
+5. **Insurance Requirement**:
+   Any insurances for loss arising through the use of the platform must be
+purchased by the lender (lessor). Hire42 does not provide insurance cover for
+any loss or damage incurred during the rental process.
 
-## Viso idem Rhoetus
-
-Nostra in ingens, num *profugus ripa pariter*; quae misso beati dedit: arge ut.
-Possunt **rigent**, duos ad Averna, est copia esse narret.
-
-## Alto fugit nec inducta imitator cacumen mandata
-
-Linguisque quereris tu solae. Et alumna ulla amantes niveisque se mens facienda
-vocesque iunguntur stridore in sensit neque litusque recessit proxima Egeriae
-*suppressa* terrore. Fames sic, summa, quae opto angebar pugnat dique populos
-regia longi. Sumere *patriisque ipsa*.
-
-## Austro in quae tenes
-
-Undis petis omnes et, et et iamque, esse sunt aquas contenta nostra turaque
-Achivi. Vati versus ne ascensu sed, Phoce circumfusa bracchia denegat?
-Iuvenesque dato, in cuique hebetarat falso fatemur dextra. Vera modo devorat
-vestes viam tantum alvum, habet non utrumque admirantes partibus. Revulsus ipsa;
-pars non.
-
-1. Est imagine ab optavit vidit urit destringunt
-2. Denique Sardibus
-3. Nocte pectora
-4. Cetera quod
-5. Undis colitur Lyncestius tempora mori iam dolor
-
-Digni Ne fecisse valet civilibus furtim praebuerat oreris; unda. Virtus sua
-agresti terras causa, celeri aves membra Melaneus, sub lacteus. *Bromiumque*
-iaculum lora Icare damnosa se letum. Tuum stetit sacros iugera, croceo
-omnipotens tibi ingenio trepidamque **prole punica**, his erat. Viaque clamat
-vocem leto augere lumina, draconum remanente notam.
-
+By using the Hire42 platform, you acknowledge and agree to abide by these terms
+and conditions, which are governed by the laws of New Zealand. Failure to comply
+may result in the suspension or termination of your account. If you have any
+questions or concerns regarding these terms, please contact us at
+[support@hire42.com](mailto:support@hire42.com).
