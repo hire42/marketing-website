@@ -26,8 +26,14 @@ income generated through the platform.
 purchased by the lender (lessor). Hire42 does not provide insurance cover for
 any loss or damage incurred during the rental process.
 
+6. **Consequences of Non-Compliance**:
+   Failure to abide by the lender's or borrower's declaration may result in
+suspension or termination from the platform. Hire42 reserves the right to take
+appropriate action in cases of non-compliance with platform policies and
+guidelines.
+
 By using the Hire42 platform, you acknowledge and agree to abide by these terms
-and conditions, which are governed by the laws of New Zealand. Failure to comply
-may result in the suspension or termination of your account. If you have any
+and conditions, which are governed by the laws of New Zealand. If you have any
 questions or concerns regarding these terms, please contact us at
 [support@hire42.com](mailto:support@hire42.com).
+
