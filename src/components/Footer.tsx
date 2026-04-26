@@ -30,7 +30,9 @@ export function Footer() {
               <Logomark className="h-10 w-10 flex-none fill-cyan-500" />
               <div className="ml-4">
                 <p className="text-base font-semibold">Hire42</p>
-                <p className="mt-1 text-sm">Connecting Equipment, Connecting People.</p>
+                <p className="mt-1 text-sm">
+                  Connecting Equipment, Connecting People.
+                </p>
               </div>
             </div>
             <nav className="mt-11 flex gap-8">
@@ -60,6 +62,20 @@ export function Footer() {
           </div>
         </div>
         <div className="flex flex-col items-center border-t border-gray-200 pb-12 pt-8 md:flex-row-reverse md:justify-between md:pt-6">
+          <nav className="flex gap-6">
+            <Link
+              href="/privacy-policy"
+              className="text-sm text-gray-500 hover:text-gray-700"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="/support"
+              className="text-sm text-gray-500 hover:text-gray-700"
+            >
+              Support
+            </Link>
+          </nav>
           {/*
           <form className="flex w-full justify-center md:w-auto">
             <TextField
