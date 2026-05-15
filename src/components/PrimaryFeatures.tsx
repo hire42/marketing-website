@@ -19,7 +19,7 @@ const features = [
   {
     name: 'Find equipment near you',
     description:
-      'Browse thousands of listings — tools, trailers, vehicles, earthmoving equipment, and more. Filter by location, category, and availability to find exactly what you need.',
+      'Browse listings — tools, trailers, vehicles, earthmoving equipment, and more. Filter by location, category, and availability to find exactly what you need.',
     icon: DeviceSearchIcon,
     image: screenshotExplore,
     imageAlt: 'Explore equipment home screen showing featured listings',

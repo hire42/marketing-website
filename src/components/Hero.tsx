@@ -114,16 +114,7 @@ export function Hero() {
               equipment, our platform makes it simple to connect and transact.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
-              {/*
               <AppStoreLink />
-              <Button
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                variant="outline"
-              >
-                <PlayIcon className="h-6 w-6 flex-none" />
-                <span className="ml-2.5">Watch the video</span>
-              </Button>
-              */}
             </div>
           </div>
           <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">

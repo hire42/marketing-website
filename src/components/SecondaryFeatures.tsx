@@ -4,7 +4,7 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'Thousands of listings',
+    name: 'Equipment listings',
     description:
       'Browse tools, trailers, vehicles, earthmoving equipment, and more — all listed by verified lenders near you.',
     icon: DeviceSearchIcon,
