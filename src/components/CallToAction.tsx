@@ -17,9 +17,9 @@ export function CallToAction() {
             Start renting or listing today
           </h2>
           <p className="mt-4 text-lg text-gray-300">
-            Join people across New Zealand already using Hire42 to find the
-            equipment they need — or earn from the gear they have. Download the
-            app and get started in minutes.
+            Currently available in New Zealand. Join people already using Hire42
+            to find the equipment they need — or earn from the gear they have.
+            Download the app and get started in minutes.
           </p>
           <div className="mt-8 flex justify-center">
             <AppStoreLink color="white" />
