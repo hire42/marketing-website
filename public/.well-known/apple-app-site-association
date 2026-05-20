@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "CLL8HTB7DV.com.hire42.mobile.app",
+        "paths": ["/app/*"]
+      }
+    ]
+  }
+}
