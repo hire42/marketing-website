@@ -25,7 +25,7 @@ const features = [
     imageAlt: 'Explore equipment home screen showing featured listings',
   },
   {
-    name: 'Book in minutes',
+    name: 'Rent in minutes',
     description:
       'Select your rental dates, pay securely online, and get instant confirmation. Everything you need to coordinate the pickup is handled in the app.',
     icon: DeviceCalendarIcon,

@@ -34,9 +34,9 @@ const features = [
     icon: DeviceStarIcon,
   },
   {
-    name: 'Order tracking',
+    name: 'Rental tracking',
     description:
-      'Follow your rental from booking through to completion. Status updates and notifications keep you in the loop at every step.',
+      'Follow your rental from request through to completion. Status updates and notifications keep you in the loop at every step.',
     icon: DeviceTrackIcon,
   },
 ]

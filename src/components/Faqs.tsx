@@ -5,7 +5,7 @@ const faqs = [
     {
       question: 'How does Hire42 work?',
       answer:
-        'Hire42 is a peer-to-peer equipment rental marketplace. Renters browse listings, select their dates, and pay securely online. Lenders confirm the booking, hand over the equipment, and get paid after the rental is complete.',
+        'Hire42 is a peer-to-peer equipment rental marketplace. Renters browse listings, select their dates, and pay securely online. Lenders confirm the rental, hand over the equipment, and get paid after the rental is complete.',
     },
     {
       question: 'Is it free to list equipment?',
@@ -25,9 +25,9 @@ const faqs = [
         'We recommend lenders document the condition of their equipment before and after each rental. If damage occurs, this provides a clear record to support any resolution between the parties.',
     },
     {
-      question: 'Can I cancel a booking?',
+      question: 'Can I cancel a rental?',
       answer:
-        'Yes. If a lender declines or cancels a confirmed booking, the renter receives a full refund. If the renter cancels, refund eligibility depends on how close to the rental start date the cancellation occurs.',
+        'Yes. If a lender declines or cancels a confirmed rental, the renter receives a full refund. If the renter cancels, refund eligibility depends on how close to the rental start date the cancellation occurs.',
     },
     {
       question: 'How does Hire42 verify lenders?',

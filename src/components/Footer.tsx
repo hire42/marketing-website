@@ -31,7 +31,7 @@ export function Footer() {
               <div className="ml-4">
                 <p className="text-base font-semibold">Hire42</p>
                 <p className="mt-1 text-sm">
-                  Connecting Equipment, Connecting People.
+                  Put your gear to work.
                 </p>
               </div>
             </div>
