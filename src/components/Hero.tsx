@@ -4,6 +4,7 @@ import clsx from 'clsx'
 
 import { AppDemo } from '@/components/AppDemo'
 import { AppStoreLink } from '@/components/AppStoreLink'
+import { GooglePlayLink } from '@/components/GooglePlayLink'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
@@ -111,8 +112,9 @@ export function Hero() {
               List your idle equipment and earn between your own jobs. Or find
               the gear you need from businesses near you.
             </p>
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
+            <div className="mt-8 flex flex-wrap gap-x-4 gap-y-4">
               <AppStoreLink />
+              <GooglePlayLink />
             </div>
           </div>
           <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">

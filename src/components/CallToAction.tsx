@@ -1,4 +1,5 @@
 import { AppStoreLink } from '@/components/AppStoreLink'
+import { GooglePlayLink } from '@/components/GooglePlayLink'
 import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
 
@@ -21,8 +22,9 @@ export function CallToAction() {
             to find the equipment they need — or earn from the gear they have.
             Download the app and get started in minutes.
           </p>
-          <div className="mt-8 flex justify-center">
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
             <AppStoreLink color="white" />
+            <GooglePlayLink color="white" />
           </div>
         </div>
       </Container>
