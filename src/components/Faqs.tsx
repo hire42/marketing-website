@@ -22,7 +22,12 @@ const faqs = [
     {
       question: 'What if the equipment is damaged?',
       answer:
-        'We recommend lenders document the condition of their equipment before and after each rental. If damage occurs, this provides a clear record to support any resolution between the parties.',
+        'Lenders can require a refundable security bond on their listing. If the item is returned damaged, the lender can claim the bond (in full or in part) within the day after the rental ends. Any unclaimed portion is automatically returned to the renter.',
+    },
+    {
+      question: 'What is the bond fee?',
+      answer:
+        'When a bond applies, a small non-refundable bond fee of 2.65% of the bond amount (incl. GST) is charged at checkout. This covers Hire42\'s cost of holding and administering the bond and is retained regardless of outcome.',
     },
     {
       question: 'Can I cancel a rental?',
