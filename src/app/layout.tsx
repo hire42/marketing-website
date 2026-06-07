@@ -12,11 +12,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    template: ‘%s - Hire42’,
-    default: ‘Hire42 — Put your gear to work.’,
+    template: '%s - Hire42',
+    default: 'Hire42 — Put your gear to work.',
   },
   description:
-    ‘Hire42 is the marketplace where New Zealand businesses and tradespeople hire out idle equipment to each other — making kit that sits unused earn its keep.’,
+    'Hire42 is the marketplace where New Zealand businesses and tradespeople hire out idle equipment to each other — making kit that sits unused earn its keep.',
 }
 
 export default function RootLayout({
