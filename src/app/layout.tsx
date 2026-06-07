@@ -12,11 +12,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Hire42',
-    default: 'Hire42 - Connecting Equipment, Connecting People.',
+    template: ‘%s - Hire42’,
+    default: ‘Hire42 — Put your gear to work.’,
   },
   description:
-    'By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses.',
+    ‘Hire42 is the marketplace where New Zealand businesses and tradespeople hire out idle equipment to each other — making kit that sits unused earn its keep.’,
 }
 
 export default function RootLayout({

@@ -10,7 +10,7 @@ const faqs = [
     {
       question: 'Is it free to list equipment?',
       answer:
-        'Yes — listing your equipment on Hire42 is completely free. We only take a small platform fee when a rental is successfully completed, so you only pay when you earn.',
+        'Yes — listing your equipment on Hire42 is completely free. Renters pay a small platform fee when a rental is successfully completed.',
     },
     {
       question: 'How do I get paid as a lender?',
