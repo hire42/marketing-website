@@ -1,35 +1,37 @@
-# Pocket
+# Hire42 Marketing Website
 
-Pocket is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+This is the marketing website for [Hire42](https://hire42.co.nz) — a peer-to-peer equipment rental platform for New Zealand.
+
+## Template
+
+Built on the **Pocket** template from [Tailwind CSS Plus](https://tailwindcss.com/plus/templates/pocket), using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
 
 ## Getting started
 
-To get started with this template, first install the npm dependencies:
+Install dependencies:
 
 ```bash
-npm install
+bun install
 ```
 
-Next, run the development server:
+Create a `.env.local` file with your Supabase credentials:
+
+```
+SUPABASE_URL=https://<project-ref>.supabase.co
+SUPABASE_ANON_KEY=<your-anon-key>
+```
+
+Run the development server:
 
 ```bash
-npm run dev
+bun dev
 ```
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
-
-## Customizing
-
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
-
-## License
-
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Learn more
 
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
+- [Tailwind CSS](https://tailwindcss.com/docs)
+- [Next.js](https://nextjs.org/docs)
+- [Headless UI](https://headlessui.dev)
+- [Supabase](https://supabase.com/docs)
