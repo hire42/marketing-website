@@ -75,6 +75,12 @@ export function Footer() {
             >
               Support
             </Link>
+            <Link
+              href="/careers"
+              className="text-sm text-gray-500 hover:text-gray-700"
+            >
+              Careers
+            </Link>
           </nav>
           {/*
           <form className="flex w-full justify-center md:w-auto">
