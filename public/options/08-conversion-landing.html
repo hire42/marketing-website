@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hire42 — Put your gear to work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{--green:#455940;--green-d:#36462f;--eggshell:#fffcf6;--ebony:#0F172B;--amber:#F7B23E;--teal:#00abaa;--gecko:#65A30D;--muted:#616674;--border:#e7e1d4}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--eggshell);color:var(--ebony);line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  .wide{max-width:1000px}
+  nav{padding:18px 0;border-bottom:1px solid var(--border)}
+  .nav-in{display:flex;justify-content:space-between;align-items:center;max-width:1000px;margin:0 auto;padding:0 24px}
+  .logo{font-weight:800;font-size:22px;letter-spacing:-.02em}
+  .logo b{color:var(--teal)}
+  .btn{background:var(--green);color:#fff;font-weight:700;font-size:15px;padding:12px 24px;border-radius:11px;display:inline-block;transition:transform .12s,background .15s}
+  .btn:hover{background:var(--green-d);transform:translateY(-1px)}
+  .btn-amber{background:var(--amber);color:var(--ebony)}
+  .btn-amber:hover{background:#e8a52f}
+  /* hero */
+  .hero{text-align:center;padding:64px 0 48px}
+  .rate{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--muted);background:#fff;border:1px solid var(--border);border-radius:99px;padding:8px 16px;margin-bottom:26px}
+  .rate .s{color:var(--amber)}
+  h1{font-size:52px;line-height:1.04;font-weight:800;letter-spacing:-.035em;margin-bottom:18px}
+  .hero .sub{font-size:20px;color:var(--muted);margin-bottom:30px}
+  .hero .btn{font-size:17px;padding:16px 34px}
+  .micro{margin-top:14px;font-size:14px;color:var(--muted)}
+  /* phone hero */
+  .heroimg{margin:42px auto 0;max-width:300px}
+  .heroimg .phone{border-radius:40px;border:10px solid #1a1a1a;overflow:hidden;box-shadow:0 36px 70px -30px rgba(15,23,43,.4)}
+  .heroimg img{width:100%;display:block}
+  /* logos / trust */
+  .trust{background:var(--ebony);color:#fff;padding:30px 0}
+  .trust .wrap{display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:center;font-size:15px;font-weight:500;color:rgba(255,255,255,.85)}
+  .trust b{color:var(--amber)}
+  /* sections */
+  section{padding:64px 0}
+  h2{font-size:34px;font-weight:800;letter-spacing:-.03em;margin-bottom:14px;text-align:center}
+  .sub2{text-align:center;color:var(--muted);font-size:18px;margin-bottom:38px}
+  .benefits{display:grid;gap:14px}
+  .benefit{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--border);border-radius:14px;padding:20px 22px}
+  .benefit .ic{flex:none;width:40px;height:40px;border-radius:10px;background:rgba(101,163,13,.12);color:var(--gecko);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800}
+  .benefit h3{font-size:18px;font-weight:700;margin-bottom:3px}
+  .benefit p{font-size:15px;color:var(--muted)}
+  /* steps numbered */
+  .steps{counter-reset:s;display:grid;gap:0}
+  .stepline{display:flex;gap:20px;padding:22px 0;border-bottom:1px solid var(--border)}
+  .stepline .n{counter-increment:s;flex:none;width:38px;height:38px;border-radius:50%;background:var(--green);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+  .stepline .n::before{content:counter(s)}
+  .stepline h3{font-size:18px;font-weight:700;margin-bottom:2px}
+  .stepline p{font-size:15px;color:var(--muted)}
+  /* testimonial */
+  .quote{background:var(--green);color:#fff;border-radius:24px;padding:50px 44px;text-align:center}
+  .quote p{font-size:26px;font-weight:600;letter-spacing:-.02em;line-height:1.3;margin-bottom:18px}
+  .quote .s{color:var(--amber);font-size:18px;margin-bottom:14px}
+  .quote cite{font-style:normal;font-size:14px;color:rgba(255,255,255,.8)}
+  /* faq */
+  details{background:#fff;border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden}
+  summary{cursor:pointer;list-style:none;padding:18px 22px;font-weight:700;font-size:17px;display:flex;justify-content:space-between;align-items:center}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:24px;font-weight:400;color:var(--green)}
+  details[open] summary::after{content:"–"}
+  details .a{padding:0 22px 20px;color:var(--muted);font-size:15.5px}
+  /* final cta */
+  .final{text-align:center;background:var(--ebony);color:#fff;border-radius:28px;padding:64px 32px}
+  .final h2{color:#fff}
+  .final p{color:rgba(255,255,255,.72);font-size:18px;margin-bottom:28px}
+  /* sticky bar */
+  .sticky{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--border);box-shadow:0 -10px 30px -20px rgba(0,0,0,.3);padding:12px 24px;display:flex;justify-content:center;gap:16px;align-items:center;z-index:50}
+  .sticky b{font-weight:700}
+  .sticky .txt{font-size:15px}
+  @media(max-width:560px){h1{font-size:38px}.sticky .txt{display:none}}
+  footer{padding:40px 0 90px;color:var(--muted);font-size:14px;text-align:center}
+</style>
+</head>
+<body>
+<nav><div class="nav-in">
+  <div class="logo">Hire<b>42</b></div>
+  <a class="btn" href="#get">Get the app</a>
+</div></nav>
+
+<header class="hero wrap">
+  <div class="rate"><span class="s">★★★★★</span> Built for New Zealand tradespeople</div>
+  <h1>Put your gear to work.</h1>
+  <p class="sub">List your idle equipment and earn between your own jobs. Or find the gear you need from businesses near you.</p>
+  <a class="btn" href="#get">Get the app — it's free to list</a>
+  <div class="micro">No invoices to chase · You set the price · Paid via Stripe</div>
+  <div class="heroimg"><div class="phone"><img src="assets/IMG_1718.png" alt="Hire42 app explore screen" /></div></div>
+</header>
+
+<div class="trust"><div class="wrap" style="max-width:1000px">
+  <span>&#10003; <b>Verified</b> businesses</span>
+  <span>&#10003; Secure payments via <b>Stripe</b></span>
+  <span>&#10003; <b>You</b> approve every rental</span>
+  <span>&#10003; Funds <b>straight to your bank</b></span>
+</div></div>
+
+<section class="wrap">
+  <h2>Your idle gear is leaving money on the table.</h2>
+  <p class="sub2">Your excavator, water blaster, scaffolding or trailer earns nothing when it's parked. Here's what Hire42 does about it.</p>
+  <div class="benefits">
+    <div class="benefit"><div class="ic">$</div><div><h3>Earn from what you already own</h3><p>Your equipment earns money between your own jobs — kit you've already paid for.</p></div></div>
+    <div class="benefit"><div class="ic">&#10003;</div><div><h3>You stay in control</h3><p>Accept or decline every rental request. Set your own price and availability.</p></div></div>
+    <div class="benefit"><div class="ic">&#8594;</div><div><h3>Paid straight to your account</h3><p>Funds go to your bank after each completed rental. No chasing invoices.</p></div></div>
+    <div class="benefit"><div class="ic">&#9201;</div><div><h3>List in minutes</h3><p>Photos, description, price — done. Then sit back and accept the requests you want.</p></div></div>
+  </div>
+</section>
+
+<section class="wrap" style="padding-top:0">
+  <h2>How it works</h2>
+  <p class="sub2">Whether you're listing or hiring, the whole process is handled in the app.</p>
+  <div class="steps">
+    <div class="stepline"><div class="n"></div><div><h3>Create your account</h3><p>Sign up and verify your business in a couple of minutes.</p></div></div>
+    <div class="stepline"><div class="n"></div><div><h3>Search for gear — or list your own</h3><p>Find equipment near you, or put your idle kit on the market.</p></div></div>
+    <div class="stepline"><div class="n"></div><div><h3>Confirm dates and pay securely</h3><p>Pick your rental period and pay through the app. Funds go to the lender.</p></div></div>
+    <div class="stepline"><div class="n"></div><div><h3>Pick up the gear and get the job done</h3><p>Meet, hand over the kit, and crack on. Rate the rental when you're finished.</p></div></div>
+  </div>
+</section>
+
+<section class="wrap" style="padding-top:0">
+  <div class="quote">
+    <div class="s">★★★★★</div>
+    <p>“The trailer used to sit in the yard six days a week. Now it earns when I'm not using it.”</p>
+    <cite>— A Far North tradie, the way we hope it goes</cite>
+  </div>
+</section>
+
+<section class="wrap" style="padding-top:0">
+  <h2>Questions, answered</h2>
+  <div style="margin-top:30px">
+    <details open><summary>What can I list on Hire42?</summary><div class="a">Tools, trailers, vehicles, earthmoving equipment, scaffolding, compressors, generators — anything that sits idle between jobs and could be earning.</div></details>
+    <details><summary>How do I get paid?</summary><div class="a">Payments are processed securely through Stripe. Your bank account is connected via Stripe Connect, so funds go directly to you after each completed rental.</div></details>
+    <details><summary>Do I have to accept every request?</summary><div class="a">No. You stay in control — accept or decline every rental request, and set your own price and availability so rentals fit around your own jobs.</div></details>
+    <details><summary>Is Hire42 a hire company?</summary><div class="a">No. Hire42 is a marketplace. We don't own the equipment — we connect the businesses and tradespeople who own it with the people nearby who need it.</div></details>
+  </div>
+</section>
+
+<section id="get" class="wrap" style="padding-top:0">
+  <div class="final">
+    <h2>Put your gear to work.</h2>
+    <p>Download Hire42 and list your first piece of equipment. Takes about 3 minutes.</p>
+    <a class="btn btn-amber" href="#" style="font-size:17px;padding:16px 34px">Get the app</a>
+  </div>
+</section>
+
+<footer>Hire42 · Put your gear to work · hire42.co.nz · &copy; 2026 · Made in Aotearoa New Zealand</footer>
+
+<div class="sticky">
+  <span class="txt"><b>Hire42</b> — put your gear to work.</span>
+  <a class="btn" href="#get">Get the app</a>
+</div>
+</body>
+</html>

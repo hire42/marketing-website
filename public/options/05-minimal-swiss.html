@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hire42 — Put your gear to work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{--green:#455940;--ink:#0F172B;--paper:#ffffff;--line:#e3e3e0;--muted:#616674;--teal:#00abaa}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .grid{max-width:1280px;margin:0 auto;padding:0 40px}
+  /* baseline grid feel via borders */
+  nav{border-bottom:1px solid var(--ink)}
+  .nav-in{display:flex;justify-content:space-between;align-items:center;padding:18px 40px;max-width:1280px;margin:0 auto}
+  .logo{font-weight:800;font-size:20px;letter-spacing:-.02em}
+  .logo b{color:var(--teal)}
+  .nl{display:flex;gap:0;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+  .nl a{padding:6px 18px;border-left:1px solid var(--line)}
+  .nl a:last-child{padding-right:0}
+  .nl a:hover{color:var(--green)}
+  /* hero */
+  .hero{border-bottom:1px solid var(--ink);padding:0}
+  .hero-grid{display:grid;grid-template-columns:1fr 1fr}
+  .hero-l{padding:80px 40px 80px 40px;border-right:1px solid var(--ink);max-width:640px;margin-left:auto;width:100%}
+  .idx{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:60px;display:flex;justify-content:space-between}
+  h1{font-size:72px;font-weight:800;letter-spacing:-.045em;line-height:.98;margin-bottom:28px}
+  .hero-l p{font-size:18px;color:var(--muted);max-width:420px;margin-bottom:36px}
+  .links{display:flex;gap:24px;font-size:14px;font-weight:600}
+  .links a{border-bottom:2px solid var(--green);padding-bottom:3px}
+  .links a:hover{color:var(--green)}
+  .hero-r{display:flex;align-items:center;justify-content:center;padding:60px;background:#fafaf8}
+  .phone{width:270px;border-radius:34px;border:9px solid var(--ink);overflow:hidden}
+  .phone img{width:100%;display:block}
+  @media(max-width:840px){.hero-grid{grid-template-columns:1fr}.hero-l{border-right:none;border-bottom:1px solid var(--ink);max-width:none}h1{font-size:52px}}
+  /* spec rows */
+  .row{display:grid;grid-template-columns:120px 1fr;border-bottom:1px solid var(--line)}
+  .row .k{padding:34px 40px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green);border-right:1px solid var(--line)}
+  .row .v{padding:34px 40px}
+  .row .v h2{font-size:30px;font-weight:700;letter-spacing:-.025em;margin-bottom:8px}
+  .row .v p{font-size:17px;color:var(--muted);max-width:680px}
+  .specgrid{max-width:1280px;margin:0 auto}
+  /* three up */
+  .three{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--ink)}
+  .cell{padding:48px 40px;border-right:1px solid var(--line)}
+  .cell:last-child{border-right:none}
+  .cell .no{font-size:13px;font-weight:700;color:var(--muted);margin-bottom:24px}
+  .cell h3{font-size:21px;font-weight:700;letter-spacing:-.01em;margin-bottom:10px}
+  .cell p{font-size:15px;color:var(--muted)}
+  @media(max-width:760px){.three{grid-template-columns:1fr}.cell{border-right:none;border-bottom:1px solid var(--line)}.row{grid-template-columns:1fr}.row .k{border-right:none;border-bottom:1px solid var(--line)}}
+  /* two paths spec */
+  .pathgrid{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--ink)}
+  .pcol{padding:48px 40px;border-right:1px solid var(--line)}
+  .pcol:last-child{border-right:none}
+  .pcol h4{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green);margin-bottom:18px}
+  .pcol .lead{font-size:24px;font-weight:700;letter-spacing:-.02em;margin-bottom:22px}
+  .pcol ol{list-style:none;counter-reset:s}
+  .pcol li{counter-increment:s;padding:14px 0;border-top:1px solid var(--line);font-size:16px;display:grid;grid-template-columns:32px 1fr}
+  .pcol li b{font-weight:700;color:var(--muted)}
+  @media(max-width:760px){.pathgrid{grid-template-columns:1fr}.pcol{border-right:none;border-bottom:1px solid var(--line)}}
+  /* cta */
+  .cta{padding:90px 40px;text-align:center}
+  .cta h2{font-size:48px;font-weight:800;letter-spacing:-.035em;margin-bottom:20px}
+  .cta a{display:inline-block;background:var(--green);color:#fff;font-weight:600;padding:15px 34px;font-size:16px;border-radius:2px}
+  footer{border-top:1px solid var(--ink);padding:22px 40px;display:flex;justify-content:space-between;font-size:13px;color:var(--muted);max-width:1280px;margin:0 auto;flex-wrap:wrap;gap:12px}
+</style>
+</head>
+<body>
+<nav><div class="nav-in">
+  <div class="logo">Hire<b>42</b></div>
+  <div class="nl"><a href="#how">How it works</a><a href="#paths">Lenders / Renters</a><a href="#get">Get the app</a></div>
+</div></nav>
+
+<header class="hero">
+  <div class="hero-grid">
+    <div class="hero-l">
+      <div class="idx"><span>Hire42 — Equipment marketplace</span><span>Aotearoa NZ</span></div>
+      <h1>Put your gear to work.</h1>
+      <p>List your idle equipment and earn between your own jobs. Or find the gear you need from businesses near you.</p>
+      <div class="links"><a href="#get">Get the app →</a><a href="#how">How it works →</a></div>
+    </div>
+    <div class="hero-r">
+      <div class="phone"><img src="assets/IMG_1718.png" alt="Hire42 app explore screen" /></div>
+    </div>
+  </div>
+</header>
+
+<div class="specgrid" id="how">
+  <div class="row">
+    <div class="k">01 / Find</div>
+    <div class="v"><h2>Find equipment near you.</h2><p>Browse tools, trailers, vehicles and earthmoving gear. Filter by location, category and availability to find exactly what you need.</p></div>
+  </div>
+  <div class="row">
+    <div class="k">02 / Rent</div>
+    <div class="v"><h2>Rent in minutes.</h2><p>Select your rental dates, pay securely online, and get instant confirmation. Everything you need to coordinate the pickup is handled in the app.</p></div>
+  </div>
+  <div class="row">
+    <div class="k">03 / Earn</div>
+    <div class="v"><h2>List and earn.</h2><p>Turn idle equipment into income. Set your availability, create a listing in minutes, and get paid directly to your bank account after each rental.</p></div>
+  </div>
+</div>
+
+<div class="three">
+  <div class="cell"><div class="no">— You stay in control</div><h3>Accept or decline</h3><p>Every rental request is yours to approve. Set your own price and availability.</p></div>
+  <div class="cell"><div class="no">— Secure payments</div><h3>Paid via Stripe</h3><p>Funds go straight to your bank account after each completed rental. No invoices to chase.</p></div>
+  <div class="cell"><div class="no">— Built for trades</div><h3>Local operators</h3><p>Search by suburb, connect with businesses near you, keep money in the trade community.</p></div>
+</div>
+
+<div class="pathgrid" id="paths">
+  <div class="pcol">
+    <h4>For lenders</h4>
+    <div class="lead">Your idle gear earns here.</div>
+    <ol>
+      <li><b>1</b><span>List your equipment with photos and a daily rate.</span></li>
+      <li><b>2</b><span>Accept rental requests from verified renters.</span></li>
+      <li><b>3</b><span>Hand over the gear and get paid.</span></li>
+    </ol>
+  </div>
+  <div class="pcol">
+    <h4>For renters</h4>
+    <div class="lead">Hire local. Skip the hire yard.</div>
+    <ol>
+      <li><b>1</b><span>Search for equipment near you.</span></li>
+      <li><b>2</b><span>Select your dates and pay securely in the app.</span></li>
+      <li><b>3</b><span>Pick up the gear and get the job done.</span></li>
+    </ol>
+  </div>
+</div>
+
+<div class="cta" id="get">
+  <h2>Put your gear to work.</h2>
+  <a href="#">Get the app</a>
+</div>
+
+<footer>
+  <span>Hire42 · Put your gear to work · hire42.co.nz</span>
+  <span>&copy; 2026 · Made in Aotearoa New Zealand</span>
+</footer>
+</body>
+</html>

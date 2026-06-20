@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hire42 — Put your gear to work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{--green:#455940;--green-d:#36462f;--eggshell:#fffcf6;--ebony:#0F172B;--blue:#316BFF;--amber:#F7B23E;--teal:#00abaa;--muted:#616674;--border:#e7e1d4}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--eggshell);color:var(--ebony);line-height:1.5}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+  nav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:40}
+  .nav-in{display:flex;align-items:center;gap:24px;padding:14px 0}
+  .logo{font-weight:800;font-size:22px;letter-spacing:-.02em}
+  .logo b{color:var(--teal)}
+  .searchbar{flex:1;display:flex;align-items:center;gap:10px;background:#f4efe4;border:1px solid var(--border);border-radius:11px;padding:10px 16px;max-width:520px}
+  .searchbar input{border:none;background:none;outline:none;font-size:15px;font-family:inherit;flex:1;color:var(--ebony)}
+  .searchbar input::placeholder{color:#9a9486}
+  .nav-actions{display:flex;gap:10px;align-items:center;margin-left:auto}
+  .btn{background:var(--green);color:#fff;font-weight:600;font-size:14px;padding:10px 18px;border-radius:10px}
+  .btn:hover{background:var(--green-d)}
+  .btn-ghost{background:none;color:var(--ebony);font-weight:600;font-size:14px;padding:10px 12px}
+  @media(max-width:780px){.searchbar{display:none}}
+  /* hero strip */
+  .hero{padding:46px 0 26px}
+  .hero h1{font-size:42px;font-weight:800;letter-spacing:-.03em;margin-bottom:10px}
+  .hero p{font-size:18px;color:var(--muted);max-width:560px}
+  .bigsearch{display:flex;gap:10px;margin-top:24px;max-width:640px;flex-wrap:wrap}
+  .bigsearch .field{flex:1;min-width:180px;display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px 16px;font-size:15px;color:var(--muted)}
+  .bigsearch input{border:none;outline:none;font-family:inherit;font-size:15px;flex:1}
+  .bigsearch .go{background:var(--green);color:#fff;border:none;border-radius:12px;padding:0 28px;font-weight:700;font-size:15px;font-family:inherit;cursor:pointer}
+  /* category chips */
+  .chips{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+  .chip{background:#fff;border:1px solid var(--border);border-radius:99px;padding:8px 16px;font-size:14px;font-weight:500;color:var(--muted)}
+  .chip:hover,.chip.on{background:var(--ebony);color:#fff;border-color:var(--ebony)}
+  /* listings */
+  section{padding:34px 0 60px}
+  .sec-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:22px}
+  .sec-head h2{font-size:24px;font-weight:700;letter-spacing:-.02em}
+  .sec-head a{color:var(--blue);font-weight:600;font-size:15px}
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .card{background:#fff;border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:transform .15s,box-shadow .15s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 20px 38px -20px rgba(15,23,43,.25)}
+  .thumb{aspect-ratio:4/3;position:relative;background:#e9e3d6;overflow:hidden}
+  .thumb img{width:100%;height:100%;object-fit:cover}
+  .thumb.ph img{object-position:top}
+  .badge{position:absolute;top:10px;left:10px;background:rgba(255,255,255,.94);color:var(--green);font-size:12px;font-weight:700;padding:5px 10px;border-radius:7px}
+  .heart{position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;font-size:14px}
+  .cbody{padding:14px 15px 16px}
+  .cbody h3{font-size:16px;font-weight:700;margin-bottom:3px}
+  .meta{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:5px;margin-bottom:10px}
+  .stars{color:var(--amber);font-size:13px}
+  .price{font-size:17px;font-weight:800}
+  .price small{font-weight:500;color:var(--muted);font-size:13px}
+  @media(max-width:980px){.cards{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.cards{grid-template-columns:1fr}}
+  /* lender band */
+  .lender{background:var(--green);color:#fff;border-radius:24px;padding:50px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+  .lender h2{font-size:34px;font-weight:800;letter-spacing:-.025em;margin-bottom:14px;color:#fff}
+  .lender p{color:rgba(255,255,255,.85);font-size:17px;max-width:440px;margin-bottom:24px}
+  .lender .btn{background:var(--amber);color:var(--ebony)}
+  .lender ul{list-style:none;display:grid;gap:12px}
+  .lender li{display:flex;gap:12px;align-items:center;font-size:16px;background:rgba(255,255,255,.08);padding:14px 18px;border-radius:12px}
+  @media(max-width:780px){.lender{grid-template-columns:1fr;padding:34px}}
+  footer{border-top:1px solid var(--border);padding:40px 0;color:var(--muted);font-size:14px}
+  .fin{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav-in">
+  <div class="logo">Hire<b>42</b></div>
+  <div class="searchbar">&#128269;<input placeholder="Search equipment — excavator, trailer, water blaster…" /></div>
+  <div class="nav-actions">
+    <a class="btn-ghost" href="#">List your gear</a>
+    <a class="btn" href="#">Get the app</a>
+  </div>
+</div></nav>
+
+<header class="hero wrap">
+  <h1>Put your gear to work.</h1>
+  <p>Find and hire equipment from businesses near you. Or list the gear that's sitting idle and earn between your own jobs.</p>
+  <div class="bigsearch">
+    <div class="field">&#128269;<input placeholder="What do you need?" /></div>
+    <div class="field">&#128205;<input placeholder="Suburb or postcode" /></div>
+    <button class="go">Search</button>
+  </div>
+  <div class="chips">
+    <span class="chip on">All</span>
+    <span class="chip">Trailers</span>
+    <span class="chip">Earthmoving</span>
+    <span class="chip">Tools</span>
+    <span class="chip">Vehicles</span>
+    <span class="chip">Scaffolding</span>
+    <span class="chip">Compressors</span>
+    <span class="chip">Generators</span>
+  </div>
+</header>
+
+<section class="wrap">
+  <div class="sec-head">
+    <h2>Featured near you</h2>
+    <a href="#">View all →</a>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="thumb ph"><img src="assets/IMG_1722.png" alt="Small enclosed trailer" /><span class="badge">Available</span><span class="heart">&#9825;</span></div>
+      <div class="cbody"><h3>Small Enclosed Trailer</h3><div class="meta">&#128205; Waipapa · <span class="stars">★★★★★</span></div><div class="price">$50<small> /day</small></div></div>
+    </div>
+    <div class="card">
+      <div class="thumb" style="background:#3d4a3a;display:flex;align-items:center;justify-content:center;font-size:46px">&#128679;</div>
+      <div class="cbody"><h3>1.7t Mini Excavator</h3><div class="meta">&#128205; Kerikeri · <span class="stars">★★★★☆</span></div><div class="price">$180<small> /day</small></div></div>
+    </div>
+    <div class="card">
+      <div class="thumb" style="background:#2f4b4b;display:flex;align-items:center;justify-content:center;font-size:46px">&#128688;</div>
+      <div class="cbody"><h3>Petrol Water Blaster</h3><div class="meta">&#128205; Paihia · <span class="stars">★★★★★</span></div><div class="price">$45<small> /day</small></div></div>
+    </div>
+    <div class="card">
+      <div class="thumb" style="background:#4a4030;display:flex;align-items:center;justify-content:center;font-size:46px">&#9889;</div>
+      <div class="cbody"><h3>6.5kVA Generator</h3><div class="meta">&#128205; Kaikohe · <span class="stars">★★★★☆</span></div><div class="price">$60<small> /day</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" style="padding-top:0">
+  <div class="sec-head">
+    <h2>Recently listed</h2>
+    <a href="#">View all →</a>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="thumb" style="background:#454a52;display:flex;align-items:center;justify-content:center;font-size:46px">&#129683;</div>
+      <div class="cbody"><h3>Scaffolding Tower Set</h3><div class="meta">&#128205; Kerikeri · <span class="stars">★★★★★</span></div><div class="price">$75<small> /day</small></div></div>
+    </div>
+    <div class="card">
+      <div class="thumb" style="background:#3a4632;display:flex;align-items:center;justify-content:center;font-size:46px">&#128666;</div>
+      <div class="cbody"><h3>Tandem Tipper Trailer</h3><div class="meta">&#128205; Waipapa · <span class="stars">★★★★☆</span></div><div class="price">$90<small> /day</small></div></div>
+    </div>
+    <div class="card">
+      <div class="thumb" style="background:#52473a;display:flex;align-items:center;justify-content:center;font-size:46px">&#128296;</div>
+      <div class="cbody"><h3>Demolition Breaker</h3><div class="meta">&#128205; Okaihau · <span class="stars">★★★★★</span></div><div class="price">$55<small> /day</small></div></div>
+    </div>
+    <div class="card">
+      <div class="thumb" style="background:#33474a;display:flex;align-items:center;justify-content:center;font-size:46px">&#128300;</div>
+      <div class="cbody"><h3>Diesel Compressor</h3><div class="meta">&#128205; Kerikeri · <span class="stars">★★★★☆</span></div><div class="price">$120<small> /day</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" style="padding-top:0">
+  <div class="lender">
+    <div>
+      <h2>Got gear sitting in the yard?</h2>
+      <p>Turn idle equipment into income. List in minutes, accept the requests you want, and get paid straight to your bank.</p>
+      <a class="btn" href="#">List your equipment</a>
+    </div>
+    <ul>
+      <li>&#10003;&nbsp; List in minutes — photos, price, done</li>
+      <li>&#10003;&nbsp; You accept or decline every request</li>
+      <li>&#10003;&nbsp; Paid to your bank via Stripe</li>
+    </ul>
+  </div>
+</section>
+
+<footer><div class="wrap fin">
+  <span class="logo" style="font-size:19px">Hire<b>42</b> — Put your gear to work.</span>
+  <span>&copy; 2026 Hire42 · hire42.co.nz · Aotearoa New Zealand</span>
+</div></footer>
+</body>
+</html>
