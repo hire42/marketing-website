@@ -39,6 +39,7 @@ export default {
       }),
       fontFamily: {
         sans: 'var(--font-inter)',
+        display: 'var(--font-anton)',
       },
       keyframes: {
         'fade-in': {
