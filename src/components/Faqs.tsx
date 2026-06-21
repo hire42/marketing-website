@@ -17,6 +17,11 @@ const faqs = [
       answer:
         'Payments are processed securely through Stripe. Once you complete identity verification and connect your bank account, funds from completed rentals are transferred directly to you.',
     },
+    {
+      question: 'Do I need to accept a rental agreement?',
+      answer:
+        'Some lenders attach their own rental agreement to a listing. When one applies, you\'ll be asked to read and accept it before you pay — no payment is taken until you agree. As a lender you can write your own agreement (or start from our standard template) and reuse it across any of your listings.',
+    },
   ],
   [
     {

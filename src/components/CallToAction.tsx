@@ -15,7 +15,7 @@ export function CallToAction() {
       <Container className="relative">
         <div className="mx-auto max-w-md sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
-            Start renting or listing today
+            Download app and start renting
           </h2>
           <p className="mt-4 text-lg text-gray-300">
             Currently available in New Zealand. Join people already using Hire42

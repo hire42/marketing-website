@@ -42,10 +42,11 @@ function StarRating({ rating }: { rating: number }) {
 function ProductCardFigure({
   product,
   className,
+  'aria-hidden': ariaHidden,
   ...props
 }: { product: ProductCard; className?: string } & Omit<
-  React.ComponentPropsWithoutRef<'figure'>,
-  'className'
+  React.ComponentPropsWithoutRef<'a'>,
+  'className' | 'href'
 >) {
   const animationDelay = useMemo(() => {
     const delays = ['0s', '0.1s', '0.2s', '0.3s', '0.4s', '0.5s']
@@ -53,9 +54,12 @@ function ProductCardFigure({
   }, [])
 
   return (
-    <figure
+    <a
+      href="/#get-started-today"
+      aria-hidden={ariaHidden}
+      tabIndex={ariaHidden ? -1 : undefined}
       className={clsx(
-        'animate-fade-in rounded-3xl bg-white opacity-0 shadow-md shadow-gray-900/5 overflow-hidden',
+        'animate-fade-in block rounded-3xl bg-white opacity-0 shadow-md shadow-gray-900/5 overflow-hidden transition hover:shadow-lg hover:shadow-gray-900/10',
         className,
       )}
       style={{ animationDelay }}
@@ -77,9 +81,6 @@ function ProductCardFigure({
             </svg>
           </div>
         )}
-        <span className="absolute left-3 top-3 rounded-full bg-cyan-500 px-2.5 py-0.5 text-xs font-medium text-white">
-          Featured
-        </span>
       </div>
       <div className="p-6">
         {product.rating != null && product.rating > 0 && (
@@ -98,11 +99,11 @@ function ProductCardFigure({
         )}
       </div>
       {product.ownerName && (
-        <figcaption className="px-6 pb-6 text-sm text-gray-600 before:content-['Listed_by_']">
+        <p className="px-6 pb-6 text-sm text-gray-600 before:content-['Listed_by_']">
           {product.ownerName}
-        </figcaption>
+        </p>
       )}
-    </figure>
+    </a>
   )
 }
 
