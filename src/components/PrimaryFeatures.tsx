@@ -11,35 +11,37 @@ import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
 import { PhoneFrame } from '@/components/PhoneFrame'
 
-import screenshotExplore from '@/images/IMG_1718.png'
-import screenshotDetail from '@/images/IMG_1723.png'
-import screenshotAvailability from '@/images/IMG_1717.png'
+import screenshotSearch from '@/images/search-location.png'
+import screenshotDates from '@/images/select-dates.png'
+import screenshotLender from '@/images/lender-overview.png'
 
 const features = [
   {
     name: 'Find equipment near you',
     description:
-      'Browse listings — tools, trailers, vehicles, earthmoving equipment, and more. Filter by location, category, and availability to find exactly what you need.',
+      'Browse listings — tools, trailers, vehicles, earthmoving equipment, and more. Filter by location and distance to find exactly what you need nearby.',
     icon: DeviceSearchIcon,
-    image: screenshotExplore,
-    imageAlt: 'Explore equipment home screen showing featured listings',
+    image: screenshotSearch,
+    imageAlt:
+      'Search screen with a map and distance filter for finding equipment nearby',
   },
   {
     name: 'Rent in minutes',
     description:
-      'Select your rental dates, pay securely online, and get instant confirmation. Everything you need to coordinate the pickup is handled in the app.',
+      'Pick your rental dates and pick-up times, pay securely online, and get instant confirmation. Everything you need to coordinate the pickup is handled in the app.',
     icon: DeviceCalendarIcon,
-    image: screenshotDetail,
+    image: screenshotDates,
     imageAlt:
-      'Rent confirmation screen showing pricing breakdown and Pay button',
+      'Select rental period screen showing a calendar with pick-up and drop-off times',
   },
   {
     name: 'List and earn',
     description:
-      'Turn idle equipment into income. Set your availability, create a listing in minutes, and get paid directly to your bank account after each rental.',
+      'Turn idle equipment into income. Create a listing in minutes, track your rentals and earnings, and get paid directly to your bank account after each rental.',
     icon: DeviceEarningsIcon,
-    image: screenshotAvailability,
-    imageAlt: 'Edit availability calendar screen showing open and closed dates',
+    image: screenshotLender,
+    imageAlt:
+      'Lender overview dashboard showing active listings and earnings',
   },
 ]
 

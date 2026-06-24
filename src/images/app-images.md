@@ -1,26 +1,38 @@
 # App Screenshots
 
-## IMG_1717.png
-**Screen:** Edit Availability (Lender)
-**Shows:** Monthly calendar (April/May 2026) with availability indicators — teal dots for open dates, red dots for closed/booked dates. Open and Close action buttons at the bottom.
+Source: iPhone 16 Pro Max simulator captures (1320×2868), dark theme.
+
+## home-explore.png
+**Screen:** For You / Explore (Renter home)
+**Shows:** Hire42 branded home with a "For you" grid of nearby listings — DeWALT Hand Truck ($10/day), Water Blaster ($55/day), Box Trailer ($80/day), 100m Solar Powered Pump ($25/day). Messages / Lend / Rent tab bar.
+**Used:** AppDemo (Hero phone)
+
+## search-location.png
+**Screen:** Search — Choose a location (Renter)
+**Shows:** Search for "Water blaster" with a "Choose a location" sheet — Apple Maps view around Waipapa/Kerikeri, "Locate me", and a Search Distance slider set to 30 km.
+**Used:** PrimaryFeatures — "Find equipment near you" tab
+
+## select-dates.png
+**Screen:** Select rental period (Renter)
+**Shows:** Date-picker calendar (June/July 2026) with a selected range (25–27 Jun) highlighted in teal, strikethrough on unavailable dates, Pick-up (9:00 AM) / Drop-Off (4:30 PM) time selectors, Done button.
+**Used:** PrimaryFeatures — "Rent in minutes" tab
+
+## lender-overview.png
+**Screen:** Lend overview (Lender dashboard)
+**Shows:** "Create listing" CTA, Overview cards (Rentals to confirm, Active listings 3, Upcoming rentals, Chats to answer), and Performance — $20 earnings (30 days).
 **Used:** PrimaryFeatures — "List and earn" tab
 
-## IMG_1718.png
-**Screen:** Explore Equipment (Home — Renter)
-**Shows:** Hire42 branded home screen with "Explore equipment" heading, Featured Equipment section showing the Small Enclosed Trailer listing by Rufus Post at NZD $50/day, Waipapa NZ. Messages / Lend / Borrow tab bar at bottom.
-**Used:** AppDemo (Hero section), PrimaryFeatures — "Find equipment near you" tab
-
-## IMG_1722.png
-**Screen:** Equipment Detail (Renter)
-**Shows:** Small Enclosed Trailer listing — hero photo, address (79 Riverstream Dr, Waipapa NZ), description, features (Braked, Box), total price for 3 days ($167.25), date range (28 Apr – 30 Apr), "Rent this item" button.
+## item-detail.png
+**Screen:** Equipment detail (Renter)
+**Shows:** Water Blaster listing — hero photo, location (Waipapa), description, lender (Rufus Post), pick-up location, total price for 3 days ($179.69), dates (23–25 Jun), "Rent this item" button.
 **Used:** Not currently used
 
-## IMG_1723.png
-**Screen:** Rent — Confirmation (Renter)
-**Shows:** Rental summary for Small Enclosed Trailer — pick-up location, pick-up date (28 Apr 26 at 9:30 AM), drop-off date (30 Apr 26 at 9:30 AM), cost breakdown (Cost $150 / Fee $15 / GST $2.25), "Pay $167.25 NZD" button.
-**Used:** PrimaryFeatures — "Book in minutes" tab
+## search-results.png
+**Screen:** Search results (Renter)
+**Shows:** Results for "Water blaster" within 30 km — 1 match (Water Blaster $55/day) plus "Other suggested products" with Filters control.
+**Used:** Not currently used
 
-## IMG_1730.png
-**Screen:** Select Rental Period (Renter)
-**Shows:** Date picker calendar (May/June 2026) with selected range (8–9 May) highlighted in teal, strikethrough on unavailable dates. Pick-up (9:00 AM) and Drop-Off (4:30 PM) time selectors, Done button.
+## messages.png
+**Screen:** Messages (inbox)
+**Shows:** Conversation list — DeWALT Hand Truck ("Can you even lift?") and Box Trailer ("Hello Ginni") threads. Messages / Lend / Borrow / Personal tab bar.
 **Used:** Not currently used

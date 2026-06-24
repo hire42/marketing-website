@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 
-import screenshot from '@/images/IMG_1718.png'
+import screenshot from '@/images/home-explore.png'
 
 export function AppDemo() {
   return (
