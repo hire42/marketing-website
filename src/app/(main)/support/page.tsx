@@ -4,6 +4,7 @@ import { Container } from '@/components/Container'
 export const metadata: Metadata = {
   title: 'Support',
   description: 'Get help with Hire42. Contact our support team.',
+  alternates: { canonical: '/support' },
 }
 
 export default function SupportPage() {

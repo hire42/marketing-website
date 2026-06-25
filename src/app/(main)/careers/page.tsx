@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Careers',
   description:
     'Join Hire42 as a Listing Agent. Sign up equipment owners in your region and earn an ongoing share of the revenue they generate.',
+  alternates: { canonical: '/careers' },
 }
 
 function CheckIcon(props: React.ComponentPropsWithoutRef<'svg'>) {

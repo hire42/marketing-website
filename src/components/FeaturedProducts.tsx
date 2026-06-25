@@ -13,9 +13,7 @@ const QUERY = `
           name
           mainImageUri
           pricePerDay
-          pickUpAddress
           rating
-          owner { firstName }
         }
       }
     }
@@ -45,13 +43,11 @@ export async function FeaturedProducts() {
     if (res.ok) {
       const { data } = await res.json()
       products = (data?.productCollection?.edges ?? []).map(
-        (e: { node: { id: string; name: string; mainImageUri: string | null; pricePerDay: number | null; pickUpAddress: string | null; rating: number | null; owner: { firstName: string } | null } }) => ({
+        (e: { node: { id: string; name: string; mainImageUri: string | null; pricePerDay: number | null; rating: number | null } }) => ({
           id: e.node.id,
           name: e.node.name,
           imageUrl: resolveImageUrl(e.node.mainImageUri, url),
           pricePerDay: e.node.pricePerDay,
-          location: e.node.pickUpAddress?.split(',')[0].trim() ?? null,
-          ownerName: e.node.owner?.firstName ?? null,
           rating: e.node.rating,
         }),
       )

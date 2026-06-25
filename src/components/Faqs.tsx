@@ -1,6 +1,6 @@
 import { Container } from '@/components/Container'
 
-const faqs = [
+export const faqs = [
   [
     {
       question: 'How does Hire42 work?',

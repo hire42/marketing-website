@@ -12,8 +12,6 @@ export type ProductCard = {
   name: string
   imageUrl: string | null
   pricePerDay: number | null
-  location: string | null
-  ownerName: string | null
   rating: number | null
 }
 
@@ -94,15 +92,7 @@ function ProductCardFigure({
             ${product.pricePerDay.toFixed(2)} / day
           </p>
         )}
-        {product.location && (
-          <p className="mt-1 text-sm text-gray-500">{product.location}</p>
-        )}
       </div>
-      {product.ownerName && (
-        <p className="px-6 pb-6 text-sm text-gray-600 before:content-['Listed_by_']">
-          {product.ownerName}
-        </p>
-      )}
     </a>
   )
 }
