@@ -1,4 +1,5 @@
 import { FeaturedProductsGrid, type ProductCard } from '@/components/FeaturedProductsGrid'
+import { resolveImageUrl } from '@/lib/products'
 
 const QUERY = `
   query FeaturedProducts {
@@ -19,12 +20,6 @@ const QUERY = `
     }
   }
 `
-
-function resolveImageUrl(mainImageUri: string | null, supabaseUrl: string): string | null {
-  if (!mainImageUri) return null
-  if (mainImageUri.startsWith('http')) return mainImageUri
-  return `${supabaseUrl}/storage/v1/object/public/product-images/${mainImageUri}`
-}
 
 export async function FeaturedProducts() {
   const url = process.env.SUPABASE_URL
