@@ -1,7 +1,23 @@
 import { type Metadata } from 'next'
 
-export const metadata: Metadata = {
-  robots: 'noindex',
+import { APP_STORE_ID } from '@/lib/appStore'
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ path: string[] }>
+}): Promise<Metadata> {
+  const { path } = await params
+  return {
+    robots: 'noindex',
+    // Safari Smart App Banner: universal links don't trigger from Safari's
+    // address bar, so this banner is how a Safari visitor with the app
+    // installed gets into it — `app-argument` carries the deep link through.
+    itunes: {
+      appId: APP_STORE_ID,
+      appArgument: `https://hire42.com/app/${path.join('/')}`,
+    },
+  }
 }
 
 export default function AppFallback() {

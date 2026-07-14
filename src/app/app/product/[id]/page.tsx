@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 
 import { AppStoreLink } from '@/components/AppStoreLink'
 import { GooglePlayLink } from '@/components/GooglePlayLink'
+import { APP_STORE_ID } from '@/lib/appStore'
 import { getProductForShare, resolveImageUrl } from '@/lib/products'
 
 const CANONICAL_HOST = 'https://hire42.com'
@@ -36,6 +37,10 @@ export async function generateMetadata({
     title: `${product.name} — Hire42`,
     description,
     alternates: { canonical: url },
+    // Safari Smart App Banner: universal links don't trigger from Safari's
+    // address bar, so this banner is how a Safari visitor with the app
+    // installed gets into it — `app-argument` carries the deep link through.
+    itunes: { appId: APP_STORE_ID, appArgument: url },
     openGraph: {
       title: product.name,
       description,
